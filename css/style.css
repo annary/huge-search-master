@@ -8,13 +8,13 @@ body {font: 600 14px Arial, sans-serif;
 
 }
 header {
-	margin: 50px 0;
+	padding: 50px 0;
 }
 .container {
 	margin-bottom: 100px;
 }
 
-input[type="search"] {
+.ba-search {
 	background: #F1F1F1;
 	font-size: 110px;
 	font-weight: bold;
@@ -23,7 +23,7 @@ input[type="search"] {
 	outline: none;
 	color: #ec5a62;
 }
-input[type="submit"] {
+.ba-submit {
 	width: 80px;
 	height: 80px;
 	background: url(../img/magnifier.svg) no-repeat center center;
@@ -37,7 +37,7 @@ input::-webkit-input-placeholder {
 input:-moz-placeholder {
 	color: #c2c2c2;
 }
-h3 {
+h2 {
 	text-transform: uppercase;
 	font-size: 16px;
 	font-weight: 800;
@@ -46,6 +46,7 @@ h3 {
 	display: inline-block;
 	font-size: 0px;
 	width: 33%;
+	vertical-align: top;
 }
 
 .container ul {
@@ -71,17 +72,26 @@ h3 {
 	background: rgba(118,117,128,0.05);
 }
 
-.container img {
+.people img {
 	border-radius: 100px;
-	margin: 10px;
 }
-.container span {
-	font-size: 14px;
+.container img {
+	margin: 10px;
+	vertical-align: middle;}
+.container a h3 {
+	/*font-size: 14px;
 	position: relative;
 	bottom: 28px;
 	left: 10px;
 	display: inline-block;
-	width: 70%;
+	width: 70%;*/
+	vertical-align: middle;
+	font-size: 14px;
+	font-weight: 700;
+	display: inline-block;
+	margin: 0 0 0 0;
+	width: calc(100% - 70px);
+
 }
 
 
